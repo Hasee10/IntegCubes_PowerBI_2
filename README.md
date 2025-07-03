@@ -1,68 +1,107 @@
 # 📊 Superstore Sales Analysis — Power BI Dashboard
 
-## 🧾 Project Overview
-Interactive Power BI dashboard for analyzing sales, profit, and customer trends using the Sample Superstore dataset.
+> 🎯 **Business Intelligence Dashboard** created using the **Sample Superstore dataset** to analyze key performance indicators like sales, profit, and discount trends — enhanced with interactivity and clean visual storytelling in **Power BI Desktop**.
 
 ---
 
-## 📷 Dashboard Snapshots
+## 🧾 Project Overview
 
-### 🔹 Total Sales KPI + Slicers
-![Total Sales Card](./1.png)
+This project demonstrates how to use **Power BI** to:
+- Track and monitor **Total Sales**, **Profit**, and **Discounts**
+- Explore customer behavior and category performance
+- Build **interactive, filterable dashboards** for decision-making
 
-### 🔹 Sales by Category Bar Chart
-![Sales by Category](./2.png)
+🛠️ Built with:
+- Power BI Desktop
+- DAX for custom metrics
+- CSV data transformation
+- Animated visuals & custom slicers
 
-### 🔹 Line Chart – Sales Over Time
-![Sales over Time](./3.png)
+---
 
-### 🔹 Profit Margin Measure + Filtering
-![Profit Margin Card](./4.png)
+## 🎞️ Dashboard Preview (Snapshots with Animation)
 
-### 🔹 Final Interactive Layout with Slicers
-![Final Dashboard](./5.png)
+> 🖱️ Hover-enabled animation examples of key visuals
+
+| Visual | Preview |
+|--------|---------|
+| 🔹 **Total Sales KPI + Slicers** | ![Total Sales Card](./1.png) |
+| 🔹 **Sales by Category – Bar Chart** | ![Sales by Category](./2.png) |
+| 🔹 **Line Chart – Sales Over Time** | ![Sales over Time](./3.png) |
+| 🔹 **Profit Margin + Filters** | ![Profit Margin Card](./4.png) |
+| 🔹 **Final Interactive Layout** | ![Final Dashboard](./5.png) |
+
+🌀 *Note: Add GIFs later for smooth transitions, slicer interactivity, and layout toggles*
 
 ---
 
 ## 📁 Dataset
+
+The dashboard is powered by:
 - `Sample - Superstore.csv`
+
+Contains:
+- Order data (Dates, Regions, Categories)
+- Customer data
+- Sales, Profit, and Discount columns
 
 ---
 
 ## 📐 DAX Measures Used
 
-- `Total Sales`
-- `Total Profit`
-- `Profit Margin %`
-- `Avg Discount`
-- `Total Discount`
+| Measure Name        | DAX Logic (Simplified)                       |
+|---------------------|----------------------------------------------|
+| `Total Sales`       | `SUM(Sales)`                                 |
+| `Total Profit`      | `SUM(Profit)`                                |
+| `Profit Margin %`   | `DIVIDE([Total Profit], [Total Sales])`      |
+| `Avg Discount`      | `AVERAGE(Discount)`                          |
+| `Total Discount`    | `SUM(Sales * Discount)`                      |
 
 ---
 
 ## 🎛️ Filters and Slicers
 
-- Year (`Order_Years`)
-- Region
-- Customer First Name
+Used for interactive exploration:
+- 📅 **Order Year** (via Date slicer)
+- 🌍 **Region**
+- 👤 **Customer First Name**
+
+Includes both:
+- ✔️ Standard slicers
+- 🔘 Button slicers for toggling views (with bookmarks)
 
 ---
 
-## 📊 Key Visuals
+## 📊 Key Visuals & Layouts
 
-- Cards (KPI)
-- Bar chart by category
-- Line chart over time
-- Pie chart by region
-- Table for detailed breakdown
+- 💳 **Cards** for Total Sales, Profit, Avg Discount
+- 📊 **Bar chart**: Sales by Category/Sub-Category
+- 📈 **Line chart**: Monthly Sales Trend
+- 🧭 **Pie chart**: Regional breakdown
+- 📋 **Table**: Transaction-level drilldown
+- 🧩 Custom visuals with subtle transitions
 
 ---
 
 ## 🚀 How to Use
 
-1. Open `.pbix` file in Power BI Desktop
-2. Use slicers to filter views
-3. Interact with visuals and explore insights
+1. 🔓 Open the `.pbix` file in **Power BI Desktop**
+2. 🎚️ Use **slicers** and **buttons** to interact
+3. 🧠 Hover, drill, and analyze different trends
 
 ---
 
-Let me know if you want this full `README.md` exported or want to add a GIF too (for animated preview)!
+## 📌 Coming Soon
+
+- 🎞️ Animated GIF Preview
+- 🌐 Power BI Service Share Link (optional)
+- 📥 Sample `.pbix` download
+
+---
+
+## 🙌 Let’s Connect
+
+If you liked this dashboard or need help building your own:
+📩 Reach out via [LinkedIn](#) or [GitHub](#)
+
+---
